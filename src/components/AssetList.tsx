@@ -5,7 +5,7 @@ function AssetList({ toggleSendModal, walletAssets, showBalance }: Asset) {
   return (
     <div>
         <div className="p-6 bg-gray-100 rounded">
-          <h2 className="text-lg font-bold mb-4">Collected Wallet Assets</h2>
+          <h2 className="text-lg font-bold mb-4"> Collected Wallet Assets </h2>
           {walletAssets && walletAssets?.map((asset: any) => (
             <div
               key={asset.id}
