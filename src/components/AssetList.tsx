@@ -38,4 +38,4 @@ function AssetList({ toggleSendModal, walletAssets, showBalance }: Asset) {
   )
 }
 
-export default AssetList
+export default AssetList;
