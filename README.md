@@ -1,9 +1,9 @@
-# Asset Chain Telegram Mini App Starter Kit
+# Asset Chain Telegram Demo App
 
-This starter kit provides a foundational setup for building a Telegram mini app integrated with blockchain wallets like MetaMask, Coinbase Wallet, and WalletConnect. It uses Next.js, wagmi for 
+This project shows builders how to develop Telegram Mini Apps on Asset Chain. It uses Next.js, wagmi for 
 Asset Chain wallet connections, and various injected providers for ease of use.
 
-## Requirements
+## Getting Started
 
 1. **Environment Variables**:  
    - Rename `.env.example` to `.env.local` and configure the following parameters:
@@ -66,3 +66,18 @@ To connect the app with different Ethereum wallet providers, you can modify the 
 ---
 
 With this setup, you'll be able to connect your Telegram mini app to various Ethereum wallets, giving your users flexibility in interacting with blockchain-enabled features.
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/xendfinance/nodesale/CONTRIBUTING.md) for contribution and pull request protocol. We expect contributors to follow our guide when submitting code or comments.
+
+## License
+
+[![License: GPL v3.0](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, just say Hi on [Telegram](https://t.me/assetchainbuilders).<br/>
+We're always glad to help.
