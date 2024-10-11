@@ -3,6 +3,12 @@
 This project shows builders how to develop Telegram Mini Apps on Asset Chain. It uses Next.js, wagmi for 
 Asset Chain wallet connections, and various injected providers for ease of use.
 
+## Table of content
+- [Getting Started](https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app#getting-started)
+- [Contributing](https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app#contributing)
+- [License](https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app#license)
+- [Support](https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app#support)
+
 ## Getting Started
 
 1. **Environment Variables**:  
