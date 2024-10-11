@@ -69,7 +69,7 @@ With this setup, you'll be able to connect your Telegram mini app to various Eth
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/xendfinance/nodesale/CONTRIBUTING.md) for contribution and pull request protocol. We expect contributors to follow our guide when submitting code or comments.
+See [CONTRIBUTING.md](https://github.com/xendfinance/assetchain-telegram-demo-app/CONTRIBUTING.md) for contribution and pull request protocol. We expect contributors to follow our guide when submitting code or comments.
 
 ## License
 
