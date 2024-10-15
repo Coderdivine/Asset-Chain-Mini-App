@@ -43,6 +43,7 @@ export const useEvmWallet = () => {
     setSelectedWallet,
     selectedWallet,
     setProcessing,
+    setDisableTon
   } = dashboardContext;
   // const { switchChain } = useSwitchChain({ config });
 
@@ -87,6 +88,7 @@ export const useEvmWallet = () => {
     setProcessing(true);
     try {
       if (!isConnected) {
+        setDisableTon(true);
         logConsole("Connect EVM wallet");
 
         const result = await connect(config, { connector: defaultConnector, chainId: AssetChainMainnet.id });
@@ -101,6 +103,7 @@ export const useEvmWallet = () => {
       }
     } catch (error: any) {
       logConsole({ error });
+      setDisableTon(false);
     }
     setProcessing(false);
   };

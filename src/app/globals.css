@@ -22,8 +22,9 @@ body {
 }
  
 .modal-glow {
-  height: 511px;
+  height: 486px;
   background: #070E17;
+  margin-bottom: 8px;
 }
 
 @layer utilities {
