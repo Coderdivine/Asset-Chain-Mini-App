@@ -20,6 +20,11 @@ body {
   background: var(--background);
   font-family: "Karla";
 }
+ 
+.modal-glow {
+  height: 511px;
+  background: #070E17;
+}
 
 @layer utilities {
   .text-balance {
