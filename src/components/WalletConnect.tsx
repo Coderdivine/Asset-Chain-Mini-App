@@ -42,7 +42,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
           </h2>
         </span>
 
-        <div className="bg-[#0B131E] h-[416px] rounded-t-[30px] p-6 min-full">
+        <div className="bg-[#0B131E] h-[421px] rounded-t-[30px] p-6 min-full">
           <div className="h-[282px] text-center">
             <h1 className="text-center font-bold text-white text-xl">
               Select Wallet
@@ -94,7 +94,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                                 alt=""
                               />
                             </span>
-                            <span className="text-md font-bold text-center mt-4 text-gray-400">
+                            <span className="grid text-md font-bold text-center mt-4 text-gray-400">
                               <span className="text-sm font-light">
                                 Metamask on Asset Chain
                               </span>
@@ -148,7 +148,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
 
             {(!evmConnected ||
               !tonConnected) && (
-                <div className="mt-8 mb-2 border-t border-t-[#55687c] p-2">
+                <div className="mt-8 mb-2 border-t border-t-[#55687c] p-1">
                   <span className="text-sm text-[#55687c]">
                     AssetConnect is Asset Chain{"’"}s native wallet connection
                     toolkit designed to seamlessly link any wallet and DApp
