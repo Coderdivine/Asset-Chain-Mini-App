@@ -72,7 +72,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                       </span>
                     ) : (
                       <span className="flex flex-col items-center mt-4 font-bold text-center text-white">
-                        {evmConnected ? (
+                        {!evmConnected ? (
                           <>
                             <span className="bg-[#0049e7] rounded-full w-24 h-24 text-center">
                               <Image
