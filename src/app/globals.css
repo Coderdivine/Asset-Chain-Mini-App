@@ -22,9 +22,9 @@ body {
 }
  
 .modal-glow {
-  height: 486px;
+  height: auto;
   background: #070E17;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .spinning-gradient {

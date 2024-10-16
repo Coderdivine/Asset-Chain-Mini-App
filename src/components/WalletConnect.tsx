@@ -29,7 +29,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
 
   return (
     <div className="fixed inset-0 bg-opacity-50 flex justify-center items-end z-50">
-      <div className="modal-glow pt-6 pb-6 w-full md:w-1/2 rounded-t-lg">
+      <div className="modal-glow pt-6 w-full md:w-1/2 rounded-t-lg">
         <span className="flex justify-between mb-4 pl-4 pr-4">
           <h2 className="text-lg font-bold mb-4">
             <Image src={logo} alt="logo" className="w-48" />
@@ -42,8 +42,8 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
           </h2>
         </span>
 
-        <div className="bg-[#0B131E] h-[421px] rounded-t-[30px] p-6 min-full">
-          <div className="h-[282px] text-center">
+        <div className="bg-[#0B131E] h-auto rounded-t-[30px] p-6 pb-1 min-full">
+          <div className="h-auto text-center">
             <h1 className="text-center font-bold text-white text-2xl">
               Select Wallet
             </h1>
@@ -137,7 +137,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                         <Image
                           alt="tonimage"
                           src={tonlogo}
-                          className="w-15 h-15 rounded-full"
+                          className="w-14 h-14 rounded-full"
                         />
                         <span className="font-bold text-sm mt-1 text-white">
                           {address || ""}
@@ -150,7 +150,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
             </div>
 
             {(!evmConnected || !tonConnected) && (
-              <div className="mt-4 mb-2 border-t border-t-[#55687c] p-1">
+              <div className="mt-4 mb-2 border-t border-t-[#55687c] pb-8">
                 <span className="text-xs font-bold text-[#55687c]">
                   AssetConnect is Asset Chain{"’"}s native wallet connection
                   toolkit designed to seamlessly link any wallet and DApp within
