@@ -150,7 +150,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
             </div>
 
             {(!evmConnected || !tonConnected) && (
-              <div className="mt-4 mb-2 border-t border-t-[#55687c] pb-8">
+              <div className="mt-4 mb-2 border-t border-t-[#55687c] pb-1">
                 <span className="text-xs font-bold text-[#55687c]">
                   AssetConnect is Asset Chain{"’"}s native wallet connection
                   toolkit designed to seamlessly link any wallet and DApp within
