@@ -27,6 +27,24 @@ body {
   margin-bottom: 8px;
 }
 
+.spinning-gradient {
+  border-radius: 50%;
+  border: 10px solid transparent;
+  /* border-top-color: #00c6ff; */
+  background: radial-gradient(60.25% 60.25% at 25% 44.27%, #0463EF 0%, #61FFF4 100%);
+  /* border-bottom-color: #0072ff; */
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

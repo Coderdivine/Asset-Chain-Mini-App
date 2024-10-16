@@ -62,19 +62,24 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                         className="bg-[#0049e7] flex mt-4 px-8 rounded-lg font-bold py-4 justify-between text-white"
                       >
                         <div className="flex text-center">
-                          <Image className="w-44" src={assetChainLogo} alt="spin" />
+                          <Image
+                            className="w-44"
+                            src={assetChainLogo}
+                            alt="spin"
+                          />
                         </div>
                         <span className="mt-1 text-light text-xl">
-                          <Image src={arrowRight} alt=""/>
+                          <Image src={arrowRight} alt="" />
                         </span>
                       </span>
                     ) : (
                       <span className="flex flex-col items-center mt-4 font-bold text-center text-white">
                         {!evmConnected ? (
                           <>
-                            <span className="bg-[#0049e7] rounded-full w-24 h-24 text-center">
+                            <span className="relative bg-[#0049e7] rounded-full w-24 h-24 flex items-center justify-center">
+                              <div className="spinning-gradient absolute inset-0 rounded-full z-0"></div>
                               <Image
-                                className="w-24 h-24 animate-spin rounded-full"
+                                className="relative w-24 h-24 object-contain z-10 rounded-full"
                                 src={loadingImage}
                                 alt=""
                               />
@@ -144,16 +149,15 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
               </div>
             </div>
 
-            {(!evmConnected ||
-              !tonConnected) && (
-                <div className="mt-4 mb-2 border-t border-t-[#55687c] p-1">
-                  <span className="text-xs font-bold text-[#55687c]">
-                    AssetConnect is Asset Chain{"’"}s native wallet connection
-                    toolkit designed to seamlessly link any wallet and DApp
-                    within the Asset Chain ecosystem.
-                  </span>
-                </div>
-              )}
+            {(!evmConnected || !tonConnected) && (
+              <div className="mt-4 mb-2 border-t border-t-[#55687c] p-1">
+                <span className="text-xs font-bold text-[#55687c]">
+                  AssetConnect is Asset Chain{"’"}s native wallet connection
+                  toolkit designed to seamlessly link any wallet and DApp within
+                  the Asset Chain ecosystem.
+                </span>
+              </div>
+            )}
           </div>
 
           <div className="flex justify-around w-auto">
