@@ -59,7 +59,7 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                     {!processing && !evmConnected ? (
                       <span
                         onClick={connectEvmWallet}
-                        className="bg-[#0049e7] flex mt-4 px-8 rounded-lg font-bold py-4 justify-between text-white"
+                        className="bg-[#0049e7] flex mt-4 px-7 rounded-lg font-bold py-4 justify-between text-white"
                       >
                         <div className="flex text-center">
                           <Image
@@ -123,9 +123,9 @@ const ConnectButton = ({ toggleModal }: ConnectButton) => {
                         <Image
                           alt="tonimage"
                           src={tonlogo}
-                          className="w-16 h-16 rounded-full"
+                          className="w-14 h-14 rounded-full"
                         />
-                        <span className="font-bold text-lg mt-2 text-white">
+                        <span className="font-bold text-md mt-2 text-white">
                           Ton
                         </span>
                       </span>
