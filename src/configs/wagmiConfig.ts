@@ -46,6 +46,7 @@ export const wagmiConfig = createConfig({
   connectors: [ coinbaseConfig, metaMaskConfig, walletConnectConfig ],
   ssr: true,
   transports: {
-    [assetChain.id]: http()
+    [assetChain.id]: http(),
+    [assetChainTestnet.id]: http()
   },
 })
