@@ -16,7 +16,7 @@ import {
   wagmiConfig as config,
   walletConnectConfig,
 } from "../configs/wagmiConfig";
-import { AssetChainMainnet } from "@/configs/chains";
+import { AssetChainMainnet, AssetChainTestnet } from "@/configs/chains";
 import { logConsole } from "@/utils/logConsole";
 
 export const useEvmWallet = () => {
@@ -31,7 +31,7 @@ export const useEvmWallet = () => {
   } = getAccount(config);
   const dashboardContext = useContext(DashboardContext);
   const defaultConnector = walletConnectConfig;
-  const defaultChainId = AssetChainMainnet.id;
+  const defaultChainId = AssetChainMainnet.id; // AssetChainTestnet.id
   if (!dashboardContext) {
     throw new Error(
       "useDashboardContext must be used within a DashboardProvider"

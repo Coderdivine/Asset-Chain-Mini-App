@@ -2,7 +2,7 @@ import { http, createConfig } from '@wagmi/core'
 import { assetChain, assetChainTestnet } from '@wagmi/core/chains'
 import { coinbaseWallet, metaMask, walletConnect, MetaMaskParameters, CoinbaseWalletParameters, WalletConnectParameters } from '@wagmi/connectors'
 import { INFURA_KEY, PROJECT_ID } from '.';
-import { AssetChainMainnet } from './chains';
+import { AssetChainMainnet, AssetChainTestnet } from './chains';
 const projectId = PROJECT_ID;
 const infuraAPIKey = INFURA_KEY;
 const metadata = {
@@ -42,7 +42,7 @@ export const metaMaskConfig = metaMask(metamaskOptions);
 export const walletConnectConfig = walletConnect(walletConnectOptions);
 
 export const wagmiConfig = createConfig({
-  chains: [ AssetChainMainnet, assetChainTestnet ],
+  chains: [ AssetChainMainnet, AssetChainTestnet ],
   connectors: [ coinbaseConfig, metaMaskConfig, walletConnectConfig ],
   ssr: true,
   transports: {
